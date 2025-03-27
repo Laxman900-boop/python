@@ -14,4 +14,4 @@ elif (operation == "*"):
 elif (operation == "/"):
      answer = first_num / second_num
 
-print(f"{answer}")            
+print(f"{answer}")

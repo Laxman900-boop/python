@@ -1,3 +1,0 @@
-first-name = laxman khatri
-age = 23
-print("hello (user name), you are (user age) years old")

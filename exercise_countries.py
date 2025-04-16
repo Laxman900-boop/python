@@ -1,11 +1,18 @@
 countries = [
-{"name": "China", "population": 34590998},
-{"name": "Nepal", "population": 36494890},
-{"name": "India", "population": 333333333333333},
-{"name": "france", "population": 44444444444444444444444},
-{"name": "Bangladesh", "population": 75555555544444444},
-{"name": "lanka", "population": 22222222222222222222222222222222222},
-
-print("List of countries:")
-
+    {"name": "Japan", "population": 124_000_000},
+    {"name": "Nepal", "population": 29_000_000},
+    {"name": "India", "population": 1_438_000_000},
+    {"name": "Sri Lanka", "population": 22_000_000},
+    {"name": "France", "population": 68_000_000},
+]
+biggest_country = countries[0]
+for index, country in enumerate(countries) :
+    print(f"Index: {index}   - Name: {country["name"]} - Population: {country["population"]:,}")
+    # Add a if to compare country with biggest_country
+    # if true we store the country in biggest_country
+    if country["population"] > biggest_country["population"]:
+        biggest_country = country
     
+
+# After the loop, we display the biggest country
+print(f"The biggest country is {biggest_country["name"]} with a population of {biggest_country["population"]:,}")
